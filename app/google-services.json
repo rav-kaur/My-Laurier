@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1097359193720-099umfhtau7hcn2g5lhqjv144i6q93c5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mylaurier",
+            "certificate_hash": "9f9cb62d2e51f45fd22a2ff8e897202996c087e4"
+          }
+        },
+        {
           "client_id": "1097359193720-7f3qejjftm1tsrp4tnl0kptai5jaosdq.apps.googleusercontent.com",
           "client_type": 3
         }
