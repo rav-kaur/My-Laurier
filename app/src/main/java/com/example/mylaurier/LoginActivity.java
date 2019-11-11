@@ -2,13 +2,13 @@ package com.example.mylaurier;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-//import android.content.Intent;
 import androidx.annotation.NonNull;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Intent;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -57,9 +57,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             currentUser = mAuth.getCurrentUser();
                             finish();
-                            //startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
-                            Toast.makeText(LoginActivity.this, "logged in",
-                                    Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "logged in", Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(LoginActivity.this, MainPageActivity.class);
+                            startActivity(i);
+
                         }else {
                             Toast.makeText(LoginActivity.this, "couldn't login",
                                     Toast.LENGTH_SHORT).show();

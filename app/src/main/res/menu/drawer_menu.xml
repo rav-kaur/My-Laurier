@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="WILFRID LAURIER UNIVERSITY"></item>
+    <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_map"
+                    android:icon="@drawable/ic_map"
+                    android:title="Map" />
+                <item
+                    android:id="@+id/nav_eateries"
+                    android:icon="@drawable/ic_food"
+                    android:title="Eateries" />
+                <item
+                    android:id="@+id/nav_schedule"
+                    android:icon="@drawable/course"
+                    android:title="Course Schedule" />
+                <item
+                    android:id="@+id/nav_calendar"
+                    android:icon="@drawable/calender"
+                    android:title="Calendar" />
+                <item
+                    android:id="@+id/nav_library"
+                    android:icon="@drawable/librry"
+                    android:title="Library" />
+                <item
+                    android:id="@+id/nav_bookstore"
+                    android:icon="@drawable/ic_bookstore"
+                    android:title="Bookstore" />
+                <item
+                    android:id="@+id/nav_study_spaces"
+                    android:icon="@drawable/studyspace"
+                    android:title="Study Spaces" />
+                <item
+                    android:id="@+id/nav_safe_hawk"
+                    android:icon="@drawable/ic_safe_hawk"
+                    android:title="Safe Hawk" />
+                <item
+                    android:id="@+id/nav_news"
+                    android:icon="@drawable/download"
+                    android:title="News" />
+
+    </group>
+
+    <item android:title="SOCIAL MEDIA"></item>
+
+</menu>
