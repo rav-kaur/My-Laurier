@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097359193720",
+    "firebase_url": "https://mylaurier-2d09b.firebaseio.com",
+    "project_id": "mylaurier-2d09b",
+    "storage_bucket": "mylaurier-2d09b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097359193720:android:ac33aff2f6ca99e3941f8d",
+        "android_client_info": {
+          "package_name": "com.example.mylaurier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097359193720-099umfhtau7hcn2g5lhqjv144i6q93c5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mylaurier",
+            "certificate_hash": "9f9cb62d2e51f45fd22a2ff8e897202996c087e4"
+          }
+        },
+        {
+          "client_id": "1097359193720-7f3qejjftm1tsrp4tnl0kptai5jaosdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7JHPd_TeLOSriDVio8J2CWSzy3DwZNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097359193720-7f3qejjftm1tsrp4tnl0kptai5jaosdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
