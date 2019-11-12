@@ -37,7 +37,7 @@
         <activity
             android:name=".calendarview"
         ></activity>
-    </application>
+
 
         <!--
             The API key for Google Maps-based APIs is defined as a string resource.
@@ -53,6 +53,9 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+    </application>
+
+
 
 
 
