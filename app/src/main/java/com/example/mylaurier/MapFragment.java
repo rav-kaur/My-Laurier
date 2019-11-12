@@ -66,6 +66,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         // change camera zoom level, without changing position
         mMap.moveCamera(CameraUpdateFactory.zoomTo(DEFAULT_ZOOM));
 
+        //
+        this.mLocationPermissionGranted = checkLocationPermissions();
+
         // Turn on the My Location layer and the related control on the map.
         updateLocationUI();
 
@@ -127,7 +130,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 mMap.setMyLocationEnabled(false);
                 mMap.getUiSettings().setMyLocationButtonEnabled(false);
                 mLastKnownLocation = null;
-                checkLocationPermissions();
             }
         } catch (SecurityException e)  {
             Log.e("Exception: %s", e.getMessage());
@@ -143,9 +145,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             class ChangeLocationListener implements View.OnClickListener {
                 @Override
                 public void onClick(View v) {
-                    ActivityCompat.requestPermissions(getActivity(),
-                            new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
-                            PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
+//                    ActivityCompat.requestPermissions(getActivity(),
+//                            new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+//                            PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
+                    requestPermissions(new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
                 }
             }
             Snackbar mySnackbar = Snackbar.make(getView(), "Allow app to access location?", Snackbar.LENGTH_LONG);
@@ -156,6 +159,26 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         return true;
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        Log.d(TAG, "Permission changed");
+        //mLocationPermissionGranted = false;
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    mLocationPermissionGranted = true;
+                    Log.d(TAG, "Permission Granted");
+                    getDeviceLocation();
+                    updateLocationUI();
+                }
+            }
+        }
+
+    }
+
     private void getDeviceLocation() {
         /*
          * Get the best and most recent location of the device, which may be null in rare
@@ -163,6 +186,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
          */
         try {
             if (mLocationPermissionGranted) {
+                Log.d(TAG, "getDeviceLocation");
                 Task locationResult = mFusedLocationProviderClient.getLastLocation();
                 locationResult.addOnCompleteListener(getActivity(), new OnCompleteListener() {
                     @Override
