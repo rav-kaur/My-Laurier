@@ -1,6 +1,8 @@
 package com.example.mylaurier;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -11,9 +13,11 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.Toolbar;
+
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -22,16 +26,12 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.*;
-import com.google.maps.android.data.kml.KmlContainer;
-import com.google.maps.android.data.kml.KmlGroundOverlay;
 import com.google.maps.android.data.kml.KmlLayer;
-import com.google.maps.android.data.kml.KmlPlacemark;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private static final int DEFAULT_ZOOM = 15;
@@ -41,6 +41,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Location mLastKnownLocation = null;
     private boolean mLocationPermissionGranted = false;
     private LatLng laurierWaterloo = new LatLng(43.4723571, -80.5285286);
+    private boolean showBuildings = true, showFoodStores = true;
+    private KmlLayer buildings, foodstores;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Construct a FusedLocationProviderClient.
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
+        // setup toolbar
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
 
@@ -68,6 +74,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        // initialize the map variable
         mMap = googleMap;
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(laurierWaterloo));
@@ -81,31 +88,79 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         getDeviceLocation();
 
         // add custom map layer
-        KmlLayer layer;
-        try {
-            layer = new KmlLayer(mMap, R.raw.laurier, getApplicationContext());
-            layer.addLayerToMap();
-        }
-        catch (Exception e){
-            Log.d(TAG, "could not load KML Layer");
-        }
-        // doesn't work. android only supports one KML file at a time?
-//        KmlLayer buildings, foodstores;
+//        KmlLayer layer;
 //        try {
-//            buildings = new KmlLayer(mMap, R.raw.buildings, getApplicationContext());
-//            foodstores = new KmlLayer(mMap, R.raw.foodstores, getApplicationContext());
-//            foodstores.
-//            //buildings.addLayerToMap();
-//            //foodstores.addLayerToMap();
+//            layer = new KmlLayer(mMap, R.raw.laurier, getApplicationContext());
+//            layer.addLayerToMap();
 //        }
-//        catch (Exception e) {
+//        catch (Exception e){
 //            Log.d(TAG, "could not load KML Layer");
 //        }
+        // KML Layers
+
+        try {
+            buildings = new KmlLayer(mMap, R.raw.buildings, getApplicationContext());
+            foodstores = new KmlLayer(mMap, R.raw.foodstores, getApplicationContext());
+            buildings.addLayerToMap();
+            foodstores.addLayerToMap();
+        }
+        catch (Exception e) {
+            Log.d(TAG, "could not load KML Layer");
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.gmapmenu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.btnBuilding:
+                if (showBuildings == false){
+                    showBuildings = true;
+                    item.setTitle("Hide Buildings");
+                    try{
+                        buildings.addLayerToMap();
+                    }
+                    catch (Exception e) {
+                        Log.d(TAG, "could not load building layer onto map");
+                    }
+                }
+                else {
+                    showBuildings = false;
+                    item.setTitle("Show Buildings");
+                    buildings.removeLayerFromMap();
+                }
+                break;
+            case R.id.btnFoodStores:
+                if (showFoodStores == false){
+                    showFoodStores = true;
+                    item.setTitle("Hide Food/ Stores");
+                    try {
+                        foodstores.addLayerToMap();
+                    }
+                    catch (Exception e) {
+                        Log.d(TAG, "could not load food/ store layer onto map");
+                    }
+                }
+                else{
+                    showFoodStores = false;
+                    item.setTitle("Show Food/ Stores");
+                    foodstores.removeLayerFromMap();
+                }
+                break;
+        }
+        return true;
+        //return super.onOptionsItemSelected(item);
     }
 
     /*
-    check user permissions, this should probably be in main activity
-     */
+            check user permissions, this should probably be in main activity
+             */
     private boolean checkLocationPermissions() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // permission not granted
@@ -120,7 +175,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
                 }
             }
-            Snackbar mySnackbar = Snackbar.make(this.getWindow().getDecorView().findViewById(android.R.id.content), "Allow app to access location?", 10);
+            Snackbar mySnackbar = Snackbar.make(this.getWindow().getDecorView().findViewById(android.R.id.content), "Allow app to access location?", Snackbar.LENGTH_LONG);
             mySnackbar.setAction("Allow", new ChangeLocationListener());
             mySnackbar.show();
             return false;
