@@ -221,7 +221,7 @@
                             android:background="#95333030"
                             android:layout_marginVertical="127dp"
                             android:gravity="center|bottom"
-                            android:text="Second Up"
+                            android:text="Second Cup"
                             android:textColor="#F7F8F2F2"
                             android:textSize="20sp"
                             android:textStyle="bold"
