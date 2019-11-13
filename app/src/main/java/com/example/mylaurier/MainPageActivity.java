@@ -81,10 +81,6 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SafeHawkFragment()).commit();
                 break;
-            case R.id.nav_news:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new NewsFragment()).commit();
-                break;
         }
 
         drawer.closeDrawer(GravityCompat.START);
