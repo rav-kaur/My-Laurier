@@ -25,9 +25,10 @@
                     android:icon="@drawable/calender"
                     android:title="Calendar" />
                 <item
-                    android:id="@+id/nav_library"
-                    android:icon="@drawable/librry"
-                    android:title="Library" />
+                    android:id="@+id/nav_invoice"
+                    android:icon="@drawable/ic_invoice"
+                    android:title="Invoice" />
+
                 <item
                     android:id="@+id/nav_bookstore"
                     android:icon="@drawable/ic_bookstore"

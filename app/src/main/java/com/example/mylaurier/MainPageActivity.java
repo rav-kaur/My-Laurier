@@ -65,9 +65,9 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CalendarFragment()).commit();
                 break;
-            case R.id.nav_library:
+            case R.id.nav_invoice:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new LibraryFragment()).commit();
+                        new InvoiceFragment()).commit();
                 break;
             case R.id.nav_bookstore:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
