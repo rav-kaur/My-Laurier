@@ -188,8 +188,6 @@ public class StudySpacesFragment extends Fragment {
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
         System.out.println(reference.toString());
-
-        System.out.println("I am getting desperate");
 //        reference.addValueEventListener(new ValueEventListener() {
 //            @Override
 //            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
