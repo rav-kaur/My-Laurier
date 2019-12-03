@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,57 +10,1018 @@
 
     tools:context=".ScheduleFragment">
 
-    <TextView
-        android:id="@+id/textDisplay1"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:background="#F44336"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textDisplay2"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"
-        android:background="#E91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textDisplay3"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="212dp"
-        android:background="#9C27B0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textDisplay4"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="312dp"
-        android:background="#673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textDisplay5"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="424dp"
-        android:background="#3F51B5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68CED1D0">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+å
+            <TableLayout
+                android:id="@+id/simpleTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TextView
+
+                    android:id="@+id/monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Monday"
+                    android:textColor="#000"
+                    android:textSize="30dp" /><!-- stretch the second column of the layout-->
+
+                <!-- first row of the table layout-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/firstRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/count_mon1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/time_mon1"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10sp"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/monday1"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="left|center_vertical"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp"-->
+<!--                        tools:context = "com.displayarraylisttextview.MainActivity"/>-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/SecondRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/count_mon2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/time_mon2"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10sp"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/monday2"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="left|center_vertical"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/ThirdRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/count_mon3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/time_mon3"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10sp"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/monday3"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="left|center_vertical"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/FourthRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/count_mon4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/time_mon4"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10sp"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/monday4"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#5E25EB25"-->
+<!--                        android:gravity="left|center_vertical"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                </TableRow>-->
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/secondTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TextView
+
+                    android:id="@+id/tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Tuesday"
+                    android:textColor="#000"
+                    android:textSize="30dp" /><!-- stretch the second column of the layout-->
+
+                <!-- first row of the table layout-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/firstRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+
+<!--                </TableRow>-->
+
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/firstRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/firstRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+
+<!--                </TableRow>-->
+<!--                <TableRow-->
+
+<!--                    android:id="@+id/firstRow"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="18dip"-->
+<!--                        android:text="1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="10"-->
+<!--                        android:text="9:30 AM\n10:20 AM"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/simpleTextView"-->
+<!--                        android:layout_width="250dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#F8F7F7"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14dp" />-->
+
+
+<!--                </TableRow>-->
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/thirdTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TextView
+
+                    android:id="@+id/wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Wednesday"
+                    android:textColor="#000"
+                    android:textSize="30dp" /><!-- stretch the second column of the layout-->
+
+                <!-- first row of the table layout-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/fourthTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TextView
+
+                    android:id="@+id/thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Thursday"
+                    android:textColor="#000"
+                    android:textSize="30dp" /><!-- stretch the second column of the layout-->
+
+                <!-- first row of the table layout-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/lastTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TextView
+
+                    android:id="@+id/friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Friday"
+                    android:textColor="#000"
+                    android:textSize="30dp" /><!-- stretch the second column of the layout-->
+
+                <!-- first row of the table layout-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+                <!--                <TableRow-->
+
+                <!--                    android:id="@+id/firstRow"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    &lt;!&ndash; first element of the row&ndash;&gt;-->
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="18dip"-->
+                <!--                        android:text="1"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="10"-->
+                <!--                        android:text="9:30 AM\n10:20 AM"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+                <!--                    <TextView-->
+
+                <!--                        android:id="@+id/simpleTextView"-->
+                <!--                        android:layout_width="250dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:background="#F8F7F7"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="CP 312\nAlgorithm Deisgn\nBA 201"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="14dp" />-->
+
+
+                <!--                </TableRow>-->
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
