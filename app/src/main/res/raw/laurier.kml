@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Laurier</name>
+    <description>Laurier Campus buildings and Food</description>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Laurier Buildings</name>
+      <Placemark>
+        <name>Science Building</name>
+        <description><![CDATA[description: (N)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(N)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5253366,43.4732591,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alumni Field</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5255208,43.4742084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Athletic Complex</name>
+        <description><![CDATA[description: (AC)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(AC)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5256518,43.4752136,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WLU Career And Co-Op Centre</name>
+        <description><![CDATA[description: (COOP)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(COOP)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5242915,43.4739672,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bricker Academic Building</name>
+        <description><![CDATA[description: (BA)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(BA)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5265084,43.4727217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Quad</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5282851,43.4739717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maureen Forrester Recital Hall</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5281965,43.474582,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lazaridis Hall</name>
+        <description><![CDATA[description: (LH)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(LH)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.529448,43.475096,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wilfrid Laurier University Library - Waterloo</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.529999,43.472861,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Frank C. Peters Building</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5306144,43.4736553,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Schlegel Building</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5303202,43.4732784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr. Alvin Woods Building</name>
+        <description><![CDATA[description: (DAWB)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(DAWB)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5294701,43.4733873,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arts Building</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5296177,43.4737824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Theatre Auditorium</name>
+        <description><![CDATA[description: (TA)<br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>(TA)</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5279047,43.4741885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>John Aird Centre</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.527724,43.4746066,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Food and Stores</name>
+      <Placemark>
+        <name>Mr.Sub</name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5286822,43.4734463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Second Cup</name>
+        <description><![CDATA[description: @ Library<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Library</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5299684,43.4730036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Union Market</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5285822,43.4734024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Starbucks</name>
+        <description><![CDATA[description: @ Concourse<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Concourse</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287787,43.4734669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Veritas Cafe</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5285819,43.4739679,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fresh Food Company Dining Hall</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5286581,43.4743205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Subway</name>
+        <description><![CDATA[description: @ Bricker Academic<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Bricker Academic</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5264095,43.4726595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tim Hortons</name>
+        <description><![CDATA[description: @ Science Building<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Science Building</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5255289,43.4731803,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bento Sushi</name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287001,43.4735024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Harvey's]]></name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287893,43.4734143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Wilf's]]></name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287853,43.4735172,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Byte 75 Coffee & Social]]></name>
+        <description><![CDATA[description: @ Lazaridis Hall<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Lazaridis Hall</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5288041,43.4749804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pizza Pizza</name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287333,43.4733815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Williams Fresh Cafe</name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5287086,43.4735417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Frank's Coffee Haus]]></name>
+        <description><![CDATA[description: @ Peters<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Peters</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5305613,43.4735457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Torito</name>
+        <description><![CDATA[description: @ Terrace Food Court<br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>@ Terrace Food Court</value>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5288459,43.4735071,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Convenience Store</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.5289119,43.4734521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Laurier Bookstore</name>
+        <description><![CDATA[description: <br> : ]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name=" ">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -80.529278,43.4732795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

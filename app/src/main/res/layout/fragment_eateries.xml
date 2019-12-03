@@ -113,7 +113,7 @@
                             android:background="#95333030"
                             android:layout_marginVertical="127dp"
                             android:gravity="center|bottom"
-                            android:text="Second Up"
+                            android:text="Second Cup"
                             android:textColor="#F7F8F2F2"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -205,7 +205,7 @@
                             android:layout_height="70dp"
                             android:layout_marginVertical="170dp"
                             android:gravity="center_horizontal"
-                            android:text="Fred Nichols Campus Centre"
+                            android:text="Food Court"
                             android:textColor="#A92B2727"
                             android:textSize="10sp"
 
@@ -327,7 +327,7 @@
                             android:layout_height="70dp"
                             android:layout_marginVertical="170dp"
                             android:gravity="center_horizontal"
-                            android:text="Fred Nichols Campus Centre"
+                            android:text="Food Court"
                             android:textColor="#A92B2727"
                             android:textSize="10sp"
 
@@ -382,7 +382,7 @@
                             android:layout_height="70dp"
                             android:layout_marginVertical="170dp"
                             android:gravity="center_horizontal"
-                            android:text="Fred Nichols Campus Centre"
+                            android:text="Food Court"
                             android:textColor="#A92B2727"
                             android:textSize="10sp"
 
@@ -444,7 +444,7 @@
                             android:layout_height="70dp"
                             android:layout_marginVertical="170dp"
                             android:gravity="center_horizontal"
-                            android:text="Science Building"
+                            android:text="Food Court"
                             android:textColor="#A92B2727"
                             android:textSize="10sp"
 
@@ -501,7 +501,7 @@
                             android:layout_height="70dp"
                             android:layout_marginVertical="170dp"
                             android:gravity="center_horizontal"
-                            android:text="Science Building"
+                            android:text="Food Court"
                             android:textColor="#A92B2727"
                             android:textSize="10sp"
 

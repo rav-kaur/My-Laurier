@@ -41,10 +41,6 @@
                     android:id="@+id/nav_safe_hawk"
                     android:icon="@drawable/ic_safe_hawk"
                     android:title="Safe Hawk" />
-                <item
-                    android:id="@+id/nav_news"
-                    android:icon="@drawable/download"
-                    android:title="News" />
 
     </group>
 

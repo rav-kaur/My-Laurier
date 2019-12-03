@@ -3,12 +3,14 @@ package com.example.mylaurier;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 //import android.widget.Toast;
 import androidx.core.view.GravityCompat;
 
@@ -79,10 +81,6 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
             case R.id.nav_safe_hawk:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SafeHawkFragment()).commit();
-                break;
-            case R.id.nav_news:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new NewsFragment()).commit();
                 break;
         }
 

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Laurier Buildings</name>
+    <Style id="icon-1899-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Science Building</name>
+      <description><![CDATA[description: (N)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(N)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5253366,43.4732591,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Alumni Field</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5255208,43.4742084,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Athletic Complex</name>
+      <description><![CDATA[description: (AC)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(AC)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5256518,43.4752136,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WLU Career And Co-Op Centre</name>
+      <description><![CDATA[description: (COOP)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(COOP)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5242915,43.4739672,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bricker Academic Building</name>
+      <description><![CDATA[description: (BA)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(BA)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5265084,43.4727217,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Quad</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5282851,43.4739717,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Maureen Forrester Recital Hall</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5281965,43.474582,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lazaridis Hall</name>
+      <description><![CDATA[description: (LH)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(LH)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.529448,43.475096,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wilfrid Laurier University Library</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.529999,43.472861,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Frank C. Peters Building</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5306144,43.4736553,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Schlegel Building</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5303202,43.4732784,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dr. Alvin Woods Building</name>
+      <description><![CDATA[description: (DAWB)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(DAWB)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5294701,43.4733873,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Arts Building</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5296177,43.4737824,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Theatre Auditorium</name>
+      <description><![CDATA[description: (TA)<br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value>(TA)</value>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.5279047,43.4741885,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>John Aird Centre</name>
+      <description><![CDATA[description: <br> : ]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name=" ">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -80.527724,43.4746066,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
